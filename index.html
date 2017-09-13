@@ -10,13 +10,93 @@
     <script type="text/javascript" src="dist/jquery/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="dist/uikit/js/uikit.js"></script>
     <script type="text/javascript" src="dist/uikit/js/uikit-icons.js"></script>
-
+    <style type="text/css">
+      body {
+        font-family: 'PT Sans', sans-serif;
+      }
+      header.header-wrapper {
+        width: 100%;
+        display: block;
+      }
+      header.header-top-justify {
+        width: 100%;
+        display: block;
+        min-height: 80px;
+      }
+      header.header-top-justify .uk-icon-image.logo {
+        height: 100px;
+        background-position: top right;
+      }
+      header.header-menu {
+        width: 100%;
+        min-height: 30px;
+        display: block;
+        background: brown;
+      }
+      .header-bottom .slogan {
+        font-size: 12px;
+      }
+      P.blogname {
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    </style>
   </head>
 
   <body>
-    <header>
-        <header class="header-top"></header>
-        <header class="header-nav"></header>
+    <header class="header-wrapper">
+        <header class="header-top-justify uk-margin-small">
+          <div class="uk-grid-match" uk-grid>
+            <div class="uk-width-1-4">
+              <!-- logo here *-->
+            </div>
+            <div class="uk-width-3-4">
+              <!-- blog name and slogan is here *-->
+              <div class="uk-section uk-section-default uk-margin-remove uk-padding-remove">
+                <div class="uk-container uk-container-small uk-padding-remove-left">
+                  <div class="header-top">
+                    <div class="uk-grid-match uk-padding-small uk-padding-remove-bottom uk-padding-remove-left" uk-grid>
+
+                      <div class="uk-width-1-3">
+                        <!-- blog name *-->
+                        <p class="blogname uk-margin-auto-vertical">Mel Export</p>
+                      </div>
+                      <div class="uk-width-2-3">
+                        <!-- search form is here *-->
+                        <form action="" method="get">
+                          <div>
+                            <div class="uk-inline uk-align-right uk-margin-remove-bottom">
+                              <a class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: search; ratio: 0.8"></a>
+                              <input placeholder="Recherche" class="uk-input uk-form-width-medium uk-form-small" type="text">
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="header-bottom uk-padding-small uk-padding-remove-left">
+                    <div uk-grid>
+                      <div class="uk-width-2-3">
+                          <p class="uk-margin-remove uk-padding-remove slogan">
+                            <!-- slogan is here *-->
+                            Ut ac iaculis tellus. Mauris venenatis, ipsum eget congue scelerisque, 
+                            magna orci molestie mauris, posuere euismod libero ligula eu sapien. Etiam et suscipit metus.
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <header class="header-menu">
+          <!-- navigation is here *-->
+
+        </header>
     </header>
     <section id="primary" class="uk-section uk-section-large">
       <div id="primary-content" class="uk-container uk-container-small">
