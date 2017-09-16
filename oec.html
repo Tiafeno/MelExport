@@ -33,7 +33,6 @@
       }
       .header-img {
         width: 100%;
-        min-height: 400px;
         background: url(imgs/vanilla.jpg) no-repeat bottom left;
         background-size: cover;
       }
@@ -62,6 +61,20 @@
         font-weight: 700;
         text-transform: uppercase;
       }
+      .uk-navbar-subtitle {
+        text-transform: capitalize;
+        font-style: italic;
+        font-weight: 100;
+      }
+      .uk-icon-button {
+        background: #134e9c;
+        color: #fbf4f4;
+
+      }
+      .el-social {
+        display: flex;
+      }
+
     </style>
   </head>
 
@@ -129,10 +142,28 @@
           </div>
         </header>
 
-        <header class="header-img">
+        <header class="header-img uk-inline">
           <!-- navigation is here *-->
           <div class="header-slide">
+            <div class="uk-section uk-section-transparent uk-margin-remove uk-padding-remove">
+              <div class="uk-container uk-container-small">
+                <div class="uk-grid-match" uk-grid>
+                  <div class="uk-width-1-2 uk-width-1-4@s uk-padding ">
+                    <img src="imgs/logo.png" alt="">
+                  </div>
+                  <div class="uk-width-3-4@s">
 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="el-social uk-margin-small">
+            <div class="uk-margin-auto-left uk-margin-auto-right uk-inline">
+              <a href="" class="uk-icon-button " uk-icon="icon: twitter"></a>
+              <a href="" class="uk-icon-button  " uk-icon="icon: facebook"></a>
+              <a href="" class="uk-icon-button" uk-icon="icon: google-plus"></a>
+            </div>
           </div>
 
         </header>
